@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>Your library</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <li>
+                            <img src="music.svg" alt="">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img src="play.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" id=""><span>Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/" id=""><span>Safety & Privacy
+                                Center</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id=""><span>Privacy
+                                Policy</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id=""><span>Cookies</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""><span>About
+                                Ads</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" id=""><span>Accessibility</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav"></div>
+                <div class="button">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Popular artists</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                viewBox="0 0 100 100">
+                                <!-- Green Background Circle -->
+                                <circle cx="50" cy="50" r="50" fill="green" />
+                                <!-- Play Icon -->
+                                <polygon points="40,30 70,50 40,70" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
+                        <h2>Pritam</h2>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="">
+                        <h2>Arijit</h2>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad" alt="">
+                        <h2>Sachin-Jigar</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="songinfo"></div>
+                <div class="playbuttons">
+                    <img src="previous.svg" alt="">
+                    <img src="play.svg" alt="">
+                    <img src="next.svg" alt="">
+                </div>
+                <div class="songtime"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
