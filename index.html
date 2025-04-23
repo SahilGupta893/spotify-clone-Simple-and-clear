@@ -12,6 +12,9 @@
 <body>
     <div class="container flex bg-black">
         <div class="left">
+            <div class="close">
+                <img class="invert" src="close.svg" alt="">
+            </div>
             <div class="home bg-grey rounded m-1 p-1">
                 <div class="logo"><img class="invert" src="logo.svg" alt=""></div>
                 <ul>
@@ -23,11 +26,11 @@
                 <div class="heading">
                     <img class="invert" src="playlist.svg" alt="">
                     <h2>Your library</h2>
-                    
+
                 </div>
                 <div class="songlist">
                     <ul>
-            
+
                     </ul>
                 </div>
                 <div class="footer">
@@ -58,7 +61,9 @@
         </div>
         <div class="right bg-grey rounded">
             <div class="header">
-                <div class="nav"></div>
+                <div class="nav">
+                        <img class = "invert hamburger" src="hamburger.svg" alt="">
+                </div>
                 <div class="button">
                     <button class="signupbtn">Sign up</button>
                     <button class="loginbtn">log in</button>
@@ -90,16 +95,25 @@
                         <h2>Sachin-Jigar</h2>
                         <p></p>
                     </div>
+
                 </div>
             </div>
             <div class="playbar">
-                <div class="songinfo"></div>
-                <div class="playbuttons">
-                    <img src="previous.svg" alt="">
-                    <img src="play.svg" alt="">
-                    <img src="next.svg" alt="">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
                 </div>
-                <div class="songtime"></div>
+                <div class="abovebar">
+
+                    <div class="songinfo"></div>
+                    <div class="playbuttons">
+                        <img id="previous" src="previous.svg" alt="">
+                        <img id="play" src="play.svg" alt="">
+                        <img id="next" src="next.svg" alt="">
+                    </div>
+                    <div class="songtime"></div>
+                </div>
             </div>
         </div>
 
