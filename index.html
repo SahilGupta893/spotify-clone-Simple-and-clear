@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container flex bg-black">
+    <div class="container flex bg-black"> 
         <div class="left">
             <div class="close">
                 <img class="invert" src="close.svg" alt="">
@@ -62,39 +62,17 @@
         <div class="right bg-grey rounded">
             <div class="header">
                 <div class="nav">
-                        <img class = "invert hamburger" src="hamburger.svg" alt="">
+                    <img class="invert hamburger" src="hamburger.svg" alt="">
                 </div>
                 <div class="button">
                     <button class="signupbtn">Sign up</button>
                     <button class="loginbtn">log in</button>
                 </div>
             </div>
+            
             <div class="spotifyPlaylists">
                 <h1>Popular artists</h1>
                 <div class="cardContainer">
-                    <div class="card">
-                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
-                                viewBox="0 0 100 100">
-                                <!-- Green Background Circle -->
-                                <circle cx="50" cy="50" r="50" fill="green" />
-                                <!-- Play Icon -->
-                                <polygon points="40,30 70,50 40,70" fill="black" />
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
-                        <h2>Pritam</h2>
-                        <p></p>
-                    </div>
-                    <div class="card">
-                        <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="">
-                        <h2>Arijit</h2>
-                        <p></p>
-                    </div>
-                    <div class="card">
-                        <img src="https://i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad" alt="">
-                        <h2>Sachin-Jigar</h2>
-                        <p></p>
-                    </div>
 
                 </div>
             </div>
@@ -112,7 +90,16 @@
                         <img id="play" src="play.svg" alt="">
                         <img id="next" src="next.svg" alt="">
                     </div>
-                    <div class="songtime"></div>
+                    <div class="timevol">
+
+                        <div class="songtime"></div>
+                        <div class="volume">
+                            <img width="25px" src="volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
