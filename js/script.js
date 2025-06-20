@@ -45,14 +45,14 @@ async function getSongs(folder) {
     songUL.innerHTML =
       songUL.innerHTML +
       `<li> 
-    <img src="music.svg" alt="">
+    <img src="img/music.svg" alt="">
                             <div class="info">
                                 <div> ${song.replaceAll("%20", " ")}</div>
                                 
                             </div>
                             <div class="playnow">
                                 <span>Play Now</span>
-                                <img src="play.svg" alt="">
+                                <img src="img/play.svg" alt="">
                             </div>
    </li>`;
   }
@@ -76,12 +76,12 @@ async function getSongs(folder) {
       // Reset all to default
       allListItems.forEach((el) => {
         el.querySelector(".playnow span").innerText = "Play Now";
-        el.querySelector(".playnow img").src = "play.svg";
+        el.querySelector(".playnow img").src = "img/play.svg";
       });
   
       // Set this one to "Playing"
       li.querySelector(".playnow span").innerText = "Playing";
-      li.querySelector(".playnow img").src = "pause.svg";
+      li.querySelector(".playnow img").src = "img/pause.svg";
     });
   });
 
@@ -93,7 +93,7 @@ const playMusic = (track, pause = false) => {
   currSong.src = `/${currFolder}/` + track;
   if (!pause) {
     currSong.play();
-    play.src = "pause.svg";
+    play.src = "img/pause.svg";
   }
   document.querySelector(".songinfo").innerHTML = decodeURI(track);
   document.querySelector(".songtime").innerHTML = "00:00/00:00";
